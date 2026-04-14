@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD Analista</title>
+
+  <!-- PIXEL META -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+    if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];
+    t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', 'TU_PIXEL_ID_AQUI'); 
+    fbq('track', 'PageView');
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0f7a3a, #0b2a66);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    .highlight {
+      color: #7CFF00;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 15px 0;
+    }
+
+    .benefits {
+      margin-top: 20px;
+    }
+
+    .benefits p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 25px;
+      background-color: #25D366;
+      color: white;
+      font-size: 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>RECARGA Y RETIRA EN AGENCIA PICHINCHA TU AGENCIA DE CONFIANZA </h1>
+
+  <div class="highlight">🎰 AGENCIA AUTORIZADA 🎰</div>
+
+  <p>
+    Recarga tu cuenta y retira tus ganancias de forma rápida, segura y sin complicaciones.
+  </p>
+
+  <div class="benefits">
+    <p>💵 Recargas desde $1 🪙</p>
+    <p>💳 Retiros desde $5 💰 </p>
+    <p>✅ Atención inmediata</p>
+  </div>
+
+  <!-- BOTÓN -->
+  <a href="https://wa.me/message/FSESZZKS7XKDP1" target="_blank" class="btn">
+    📲 RECARGA AQUÍ
+  </a>
+
+  <!-- EVENTO PIXEL -->
+  <script>
+    document.querySelector('.btn').addEventListener('click', function() {
+      fbq('track', 'Lead');
+      fbq('trackCustom', 'telegramJoinClick');
+    });
+  </script>
+
+</body>
+</html>
